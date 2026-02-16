@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact SELENA | Demander la brochure</title>
+    <meta name="description" content="Contactez SELENA pour recevoir la brochure et échanger avec notre équipe ou notre réseau." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><div class="container header-inner"><a href="index.html"><img class="logo" src="assets/images/logo-selena.png" alt="Logo SELENA" /></a><button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav" class="primary-nav"><ul><li><a href="index.html">Accueil</a></li><li><a href="modeles.html">Modèles</a></li><li><a href="univers.html">Univers</a></li><li><a href="reseau.html">Réseau</a></li><li><a href="actualites.html">Actualités</a></li><li><a class="active" href="contact.html">Contact</a></li><li><a class="cta-button" href="contact.html">Demander la brochure</a></li></ul></nav></div></header>
+    <main class="section container">
+      <p class="kicker">Contact</p>
+      <h1>Demander la brochure SELENA</h1>
+      <p class="section-intro">Sélectionnez votre profil et transmettez votre demande à nos équipes.</p>
+      <div class="form-tabs">
+        <button class="tab-btn active" data-tab-target="#client" type="button">Client</button>
+        <button class="tab-btn" data-tab-target="#distributeur" type="button">Distributeur</button>
+      </div>
+      <div id="client" class="tab-panel active">
+        <form data-fake-submit>
+          <label>Nom<input type="text" name="nom" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Ville<input type="text" name="ville" required /></label>
+          <label>Projet<textarea name="message" required></textarea></label>
+          <input type="submit" value="Demander la brochure" />
+          <p class="form-response" aria-live="polite"></p>
+        </form>
+      </div>
+      <div id="distributeur" class="tab-panel">
+        <form data-fake-submit>
+          <label>Nom de la société<input type="text" name="nom" required /></label>
+          <label>Nom du contact<input type="text" name="contact" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <input type="submit" value="Demander la brochure" />
+          <p class="form-response" aria-live="polite"></p>
+        </form>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><p>SELENA — Contact premium</p><a href="contact.html" class="cta-button secondary">Demander la brochure</a></div></footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
